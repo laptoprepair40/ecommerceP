@@ -1,0 +1,85 @@
+:root{
+    --color-dark:#262626;
+    --color-light:#fff;
+    --color-yellow:#fed700;
+    --color-red:#df3737;
+}
+/* refrebce web : https://electro.madrasthemes.com/home-v11/  */
+li{
+    list-style-type:none;
+}
+/* start menu  */
+.menu{
+    display: flex;
+    flex-flow: row;
+    padding: 5px  0px;
+    align-items: center;
+    transition: ease-in 0.3s;
+}
+
+.menu-item{
+
+}
+.nav-link{
+    padding: unset;
+    padding: 0px 10px;
+ 
+
+}
+.nav-link .icon{
+    margin: 0 2px;
+}
+.nav-link .text{
+
+}
+/* end menu  */
+/* start top bar section  */
+.top-bar{
+    padding: 5px 0 5px 0 ;
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    font-size: 0.9em;
+}
+#left-top-bar{
+   
+}
+#left-top-bar .text{
+    display: flex;
+    align-items: center;
+    padding: 5px  0px;
+
+}
+#left-top-bar .text span {
+    display: flex;
+    
+
+}
+#right-top-bar {
+
+}
+
+.top-menu-right{
+    justify-content: right;
+}
+
+.top-menu-item-right{
+    border-left: solid 1px var(--color-dark);
+    
+}
+.top-menu-item-right .nav-link{
+    color: var(--color-dark);
+    
+}
+ 
+/* end  top bar section  */
+/* start main menu section  */
+.main-menu{
+    position: absolute;
+    right: 0;
+    left: 0;
+    top:38
+    
+}
+/* end main menu section  */
