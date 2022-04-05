@@ -14,11 +14,11 @@ li{
     flex-flow: row;
     padding: 5px  0px;
     align-items: center;
-    transition: ease-in 0.3s;
+    transition: ease-in 0.3s ;
 }
 
 .menu-item{
-
+ 
 }
 .nav-link{
     padding: unset;
