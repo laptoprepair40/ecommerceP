@@ -1,85 +1,241 @@
-:root{
-    --color-dark:#262626;
-    --color-light:#fff;
-    --color-yellow:#fed700;
-    --color-red:#df3737;
+:root {
+    --color-dark: #262626;
+    --color-light: #fff;
+    --color-yellow: #fed700;
+    --color-red: #df3737;
 }
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
 /* refrebce web : https://electro.madrasthemes.com/home-v11/  */
-li{
-    list-style-type:none;
+ul {
+    margin: unset;
 }
+ 
+li {
+    list-style-type: none;
+}
+
 /* start menu  */
-.menu{
+.menu {
     display: flex;
     flex-flow: row;
-    padding: 5px  0px;
+    padding: 5px 0px;
     align-items: center;
-    transition: ease-in 0.3s ;
+    transition: ease-in 0.3s;
 }
 
-.menu-item{
- 
-}
-.nav-link{
+.menu-item {}
+
+.nav-link {
     padding: unset;
     padding: 0px 10px;
- 
- 
+    color:var(--color-light);
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
 }
-.nav-link .icon{
-    margin: 0 2px;
-}
-.nav-link .text{
+ 
+.nav-link:hover {
+    
+    color:var(--color-yellow);
 
 }
+ 
+.nav-link .icon {
+    margin: 0 2px;
+    font-size: 1.2em;
+}
+
+.nav-link .text {}
+
 /* end menu  */
 /* start top bar section  */
-.top-bar{
-    padding: 5px 0 5px 0 ;
+.top-bar {
+    padding: 5px 0 5px 0;
     position: absolute;
     right: 0;
     left: 0;
     top: 0;
     font-size: 0.9em;
 }
-#left-top-bar{
-   
+
+.top-bar-holder {
+    padding: unset;
 }
-#left-top-bar .text{
+
+#left-top-bar {}
+
+#left-top-bar .text {
     display: flex;
     align-items: center;
-    padding: 5px  0px;
+    padding: 5px 0px;
 
 }
+
 #left-top-bar .text span {
     display: flex;
-    
 
-}
-#right-top-bar {
 
 }
 
-.top-menu-right{
+#right-top-bar {}
+
+.top-menu-right {
     justify-content: right;
 }
 
-.top-menu-item-right{
+.top-menu-item-right {
     border-left: solid 1px var(--color-dark);
-    
+
 }
-.top-menu-item-right .nav-link{
+
+.top-menu-item-right .nav-link {
     color: var(--color-dark);
-    
 }
- 
+.top-menu-item-right .nav-link .icon {
+        font-size: unset;
+}
+
 /* end  top bar section  */
 /* start main menu section  */
-.main-menu{
+.main-menu {
     position: absolute;
     right: 0;
     left: 0;
-    top:38
-    
+    top: 50px;
+
+    color: var(--color-light);
+
+
+
 }
+
+.main-menu .header-holder {
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    background-color: var(--color-dark);
+    border-radius: 50px;
+    background-clip: content-box;
+}
+
+.logo-holder {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-holder svg {
+    margin-left: 15px;
+}
+
+.logo-holder path {
+    fill: var(--color-light)
+}
+
+.menu-collapse {
+    font-size: 1.8em;
+}
+
+.menu-collapse:hover {
+    cursor: pointer;
+}
+
+.search-bar-form {
+    display: flex;
+    flex-flow: row;
+}
+
+#search-filed,
+#category-filed,
+#search-btn {
+    border-radius: unset;
+    background: transparent;
+    color: var(--light);
+}
+#search-filed::placeholder
+ {
+    color: var(--light);
+}
+ 
+#search-filed {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-right: unset;
+}
+
+#category-filed {
+    border-right: unset;
+    border-left: unset;
+}
+#category-filed option {
+    background-color: var(--color-dark);
+    color: var(--color-light);
+}
+
+#search-btn{
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    height: 38px;
+    background-color: var(--color-yellow);
+}
+#search-btn{
+    border-left: unset;
+    border-color: var(--color-light);  
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    height: 38px;
+    background-color: var(--color-yellow);
+}
+#search-btn i{
+    color:var(--color-dark)
+ 
+}
+
 /* end main menu section  */
+
+
+
+
+
+
+
+@media (min-width: 576px) {
+    .container {
+        max-width: 540px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+}
+
+@media (min-width: 992px) {
+
+    .container {
+        max-width: 960px;
+    }
+}
+
+@media (min-width: 1200px) {
+
+    .container {
+        max-width: 1200px;
+    }
+}
+
+@media (min-width: 1480px) {
+    .container {
+        max-width: 1430px;
+    }
+}
