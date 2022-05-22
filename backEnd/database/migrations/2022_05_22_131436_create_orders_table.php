@@ -16,7 +16,9 @@ return new class extends Migration
         Schema::create('orders', function (Blueprint $table) {
             $table->id();
             $table->float('price')->default(0.0);
-            $table->enum('statu', ['canceled', 'on-hold', 'on-processing','waiting-payment','paid']);
+            $table->enum('statu', ['canceld', 'on-hold', 'on-processing','waiting-payment','paid']);
+            $table->foreignId('product_id')->constrained('products');
+            
             $table->timestamps();
         });
     }

@@ -13,9 +13,11 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('proprieties', function (Blueprint $table) {
+        Schema::create('product_properity', function (Blueprint $table) {
             $table->id();
-            $tabel->strign('name');
+            $table->foreignId('product_id')->constrained('products')->cascadeOnDelete();;
+            $table->foreignId('properity_id')->constrained('properities')->cascadeOnDelete(); 
+            $table->string('value');
             $table->timestamps();
         });
     }
@@ -27,6 +29,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('proprieties');
+        Schema::dropIfExists('product_properity');
     }
 };
