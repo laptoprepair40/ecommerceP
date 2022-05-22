@@ -18,7 +18,7 @@ a,a:hover,a:visited ,a:active {
 body{
     /* min-height: 5000px; */
 }
-/* refrebce web : https://electro.madrasthemes.com/home-v11/  */
+/* refrence web : https://electro.madrasthemes.com/home-v11/  */
 ul {
     margin: unset;
 }
@@ -220,7 +220,7 @@ li {
 
 }
 .slider{
-    background-image: url(https://electro.madrasthemes.com/wp-content/uploads/2021/08/home-v11-slider-bg.jpeg);
+    background-image: url("../img/acerMonitor.jpg");
     background-position: bottom;
     background-repeat: no-repeat;
     background-size: cover;
@@ -282,6 +282,7 @@ li {
     background-color: var(--color-yellow);
     padding: 10px 20px;
     border-radius: 10px;
+    font-weight: bold;
 }
 /* end slider section  */
 /* start categories section  */
@@ -371,6 +372,9 @@ li {
     border-bottom: 2px solid var(--color-dark-light);
     text-align: right;
  }   
+.card-body .price{
+    font-weight: bold;
+}
 .show-more a{
     color: var(--color-dark-light);
  }   

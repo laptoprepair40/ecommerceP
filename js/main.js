@@ -12,7 +12,7 @@ $(document).ready(function(){
 
     $('.owl-carousel').owlCarousel({
         loop:true,
-         
+        autoplay : 3000,
         nav:true,
         responsive:{
             0:{
